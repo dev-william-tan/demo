@@ -1,5 +1,5 @@
 
-# Copilot Backend Demo Flow
+# Copilot Backend Demo Preparation Flow
 
 ## 1. Repository and Collaboration Setup
 
