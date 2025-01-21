@@ -28,11 +28,11 @@ public class DatabaseConnectionTest {
         assertThat(result).isEqualTo(1);
     }
 
-    @Test
+    @Test 
     public void testUsersTableExists() throws Exception {
         // Check if the users table exists
         Integer tableCount = jdbcTemplate.queryForObject(
-            "SELECT COUNT(*) FROM information_schema.tables WHERE table_name = 'users'", Integer.class);
+            "SELECT COUNT(*) FROM information_schema.tables WHERE table_name = 'USERS' AND table_schema = 'PUBLIC'", Integer.class);
         assertThat(tableCount).isEqualTo(1);
     }
 
