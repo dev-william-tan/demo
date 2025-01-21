@@ -4,16 +4,14 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "USERS")
-public class User {
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private String email;
+    private Double price;
 
     // Getters and Setters
     public Long getId() {
@@ -32,11 +30,11 @@ public class User {
         this.name = name;
     }
 
-    public String getEmail() {
-        return email;
+    public Double getPrice() {
+        return price;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setPrice(Double price) {
+        this.price = price;
     }
 }
