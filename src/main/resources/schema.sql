@@ -10,3 +10,10 @@ CREATE TABLE product (
     price DECIMAL(10, 2) NOT NULL,
     description TEXT
 );
+
+CREATE TABLE external_user (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    username VARCHAR(100),
+    email VARCHAR(100) UNIQUE NOT NULL
+);
